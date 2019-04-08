@@ -1,0 +1,39 @@
+/* Font */ 
++font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular")
++font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold)
+
+$default-font: "roboto-example", sans-serif
+
+// Color
+$accent: green
+
+
+// Size
+$base-font-size: 16px
+
+$content-size: 1280px
+
+//breakpoints
+  //"phone"       : 400px,
+  //"phone-wide"  : 480px,
+  //"phablet"     : 560px,
+  //"tablet-small": 640px,
+  //"tablet"      : 768px,
+  //"tablet-wide" : 1024px,
+  //"desktop"     : 1248px,
+  //"desktop-wide": 1440px
+
+
+// Brakepoint
+=lg
+  +r(1199)
+    @content
+=md
+  +r(1023)
+    @content
+=sm
+  +r(767)
+    @content
+=xs
+  +r(600)
+    @content
