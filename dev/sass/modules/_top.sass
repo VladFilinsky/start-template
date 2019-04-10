@@ -1,0 +1,87 @@
+.top
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center top
+	color: #fff
+	padding: 400px 0 200px 0
+	+md
+		padding: 300px 0 100px 0
+	.container
+		display: flex
+		justify-content: space-between
+		+lg
+			justify-content: center
+		+md
+			flex-wrap: wrap
+			padding-top: 50px
+.title
+	position: relative
+	z-index: 1
+	width: 55%
+	+lg
+		width: 50%
+	+md
+		width: 100%
+		text-align: center
+	h1
+		font-size: 60px
+		+lg
+			font-size: 50px
+		+xs
+			font-size: 30px
+		span
+			font-weight: 200
+	p 
+		margin-top: 10px
+		font-size: 18px
+		font-weight: 200
+.advantages
+	width: 40%
+	padding-top: 17px
+	position: relative
+	z-index: 1
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	+md
+		width: 100%
+		padding-top: 50px
+		min-height: 400px
+		justify-content: center
+	+xs
+		min-height: 740px
+	&__item
+		min-height: 50px
+		position: relative
+		padding-left: 70px
+		+md
+			width: 40%
+			padding: 50px 0 0 0
+			text-align: center
+		+xs
+			width: 100%
+			padding: 60px 0 0 0
+		span
+			display: inline-block
+			position: absolute
+			width: 50px
+			height: 50px
+			top: 0
+			left: 0
+			background-repeat: no-repeat
+			background-size: 100%
+			background-origin: center
+			+md
+				left: 50%
+				transform: translateX(-50%)
+			+xs
+				width: 60px
+				height: 60px
+		p
+			padding-top: 5px
+			font-weight: 200
+			line-height: 1.2
+			strong
+				text-transform: uppercase
+				font-weight: 600
+				white-space: nowrap

@@ -1,11 +1,15 @@
 ---
-title: Шаблон
+title: За Ручьем-коммерческая недвижимость
 ---
-{% extends "layouts/_layout.html" %}
+{% extends "layouts/commerce/layout.html" %}
+{% include "partials/_mixins.html" %}
 {% block content %}
 {% include "partials/_header.html" %}
-<h1>Sells_template</h1>
-<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+{% include "partials/_top.html" %}
+{% include "partials/_condition.html" %}
+{% include "partials/_benefit.html" %}
+{% include "partials/_callback.html" %}
+{% include "partials/_park.html" %}
 {% include "partials/_footer.html" %}
 {% include "partials/_modal.html" %}
 {% endblock %}

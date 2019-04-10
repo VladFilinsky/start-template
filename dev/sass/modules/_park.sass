@@ -1,0 +1,93 @@
+.s-park
+	background-color: #333
+	color: #fff
+	> .container
+		position: absolute
+		z-index: 2
+		left: 50%
+		transform: translateX(-50%)
+.park
+	width: 100%
+	height: 100%
+	position: relative
+	.owl-nav
+		height: 0
+		button
+			display: inline-block
+			position: absolute
+			width: 80px
+			height: 80px
+			top: 50%
+			transform: translateY(-50%)
+			+md
+				width: 60px
+				height: 60px
+			+xs
+				width: 40px
+				height: 40px
+		.owl-prev
+			left: 5%
+			transform: rotate(180deg) translateY(50%)
+		.owl-next
+			right: 5%
+		.slider__nav
+			display: inline-block
+			width: 100%
+			height: 100%
+			border: 1px solid $green
+			border-radius: 50%
+			background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 477.175 477.175' style='enable-background:new 0 0 477.175 477.175;' xml:space='preserve'%3E%3Cpath fill='%23ffffff' fill-opacity='0.6' d='M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z '/%3E%3C/svg%3E")
+			background-size: 60%
+			background-position: center center
+			background-repeat: no-repeat
+	h3
+		font-weight: bold
+		font-size: 36px
+		position: relative
+		+md
+			font-size: 24px
+	p
+		margin: 10px 0 40px
+		font-weight: 200
+		position: relative
+		width: 50%
+		+sm
+			width: 70%
+		+xs
+			width: 100%
+	a
+		position: relative
+	a:last-child
+		padding: 8px 40px
+		margin-left: 23px
+		+xs
+			margin: 15px 0 0 0
+		svg
+			margin-right: 5px
+			width: 24px
+			height: 24px
+			fill: #fff
+		&:hover
+			svg
+				fill: #333333
+	&__item
+		padding: 300px 0 100px 0
+		min-height: 810px
+		height: 100%
+		width: 100%
+		background-position: center top
+		background-repeat: no-repeate
+		background-size: cover
+		+r(1400)
+			padding-left: 150px
+		+md
+			padding: 200px 0 50px 100px
+			min-height: 600px
+		+xs
+			text-align: center
+			padding-left: 0
+		
+.park .owl-nav .owl-prev.disabled
+	opacity: 0
+.park .owl-nav .owl-next.disabled
+	opacity: 0

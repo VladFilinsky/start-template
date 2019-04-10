@@ -1,9 +1,9 @@
 {
-  "name": "start-template",
+  "name": "zr-commerce",
   "version": "1.0.0",
-  "description": "My start Template",
+  "description": "",
   "main": "index.js",
-  "author": "Salamatin Anatoliy",
+  "author": "Vladislav Filinsky",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -35,8 +35,12 @@
     "imagemin-pngquant": "^6.0.0"
   },
   "dependencies": {
+    "imask": "^4.1.5",
     "jquery": "^3.3.1",
+    "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.0",
+    "owl-carousel": "^1.0.0",
+    "owl.carousel": "^2.3.4",
     "svg4everybody": "^2.1.9"
   }
 }

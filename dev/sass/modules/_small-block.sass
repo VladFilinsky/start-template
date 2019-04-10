@@ -1,0 +1,135 @@
+.btn
+	font-family: $open-sans-font
+	display: inline-block
+	border: 2px solid $btn
+	color: #fff
+	text-decoration: none
+	background-color: $btn
+	padding: 10px 28px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	border-radius: 38px
+	text-align: center
+	white-space: nowrap
+	position: relative
+	outline: none
+	transition:  .25s ease
+	cursor: pointer
+	box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 1, 0.1)
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: #fff
+		color: #333
+		border: 2px solid $btn
+	&:active
+		background-color: lighten($btn, 35%)
+.btn__green
+	background-color: $green
+	border: 2px solid $green
+	padding: 10px 30px
+	&:hover
+		background-color: #fff
+		border: 2px solid $green
+		color: #333
+	&:active
+		background-color: lighten($green, 35%)
+
+.subtitle
+	padding: 90px 0 70px 0
+	position: relative
+	+sm
+		padding: 70px 0 50px 0
+	h2
+		text-align: center
+		font-size: 39px
+		font-weight: 200
+		+xs
+			font-size: 26px
+	span
+		position: absolute
+		content: ''
+		display: inline-block
+		border: 1px solid $btn
+		border-radius: 50%
+		background-color: $btn
+		width: 22px
+		height: 22px
+		top: 106px
+		+sm
+			display: none
+		&:before
+			content: ''
+			display: inline-block
+			position: absolute
+			border: 1px solid $btn
+			border-radius: 50%
+			background-color: $btn
+			width: 16px
+			height: 16px
+			left: -35px
+			top: 50%
+			transform: translateY(-50%)
+		&:after
+			content: ''
+			display: inline-block
+			position: absolute
+			border: 1px solid $btn
+			border-radius: 50%
+			background-color: $btn
+			width: 30px
+			height: 30px
+			right: -45px
+			top: 50%
+			transform: translateY(-50%)
+	span:first-child
+		left: 55px
+	span:last-child
+		right: 55px
+		transform: rotate(180deg)
+/* Зеленая полоса*/
+.hr, .hr__small
+		display: inline-block
+		position: relative
+		width: 40px
+		height: 8px
+		background-color: $green
+		border: none
+		margin-left: 5px
+.hr__small
+	width: 27px
+	height: 5px
+.circle 
+	display: block
+	position: absolute
+	content: ''
+	border-radius: 50%
+	background-color: $btn
+	background: linear-gradient(144deg, #461393 0%, #3276b0 45%, #c2dff6 100%)
+	box-shadow: 2px 2px 5px rgba(#000, .2)
+/* OVERLAY SECTION */
+.overlay, .overlay__park
+	&::before
+		position: absolute
+		z-index: 0
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(39deg, rgba(#000, .80%) 0%, rgba(#000, .30%) 100%)
+.overlay__park
+	&::before
+		background: linear-gradient(90deg, rgba(#181818, .55%) 0%, rgba(#181818, .25%) 100%)
+form
+	input
+		outline: none
+		border: 1px solid #ebebeb
+		border-radius: 3px
+		padding: 9px 0 9px 15px
+		min-width: 260px
+		margin-right: 14px
+		color: #979797
+		box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 1, 0.1)

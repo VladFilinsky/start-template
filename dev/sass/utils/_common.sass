@@ -3,7 +3,7 @@ html
 	font-size: $base-font-size
 	height: 100%
 body
-  font-family: $default-font
+  font-family: $open-sans-font
   background: #fff
   color: #333
   line-height: 1.4
@@ -13,6 +13,9 @@ body
   position: relative
 h1, h2, h3, h4, h5, h6 
 	margin: 0
+	font-family: $default-font
+h1, h2
+	text-transform: uppercase
 ul, li
 	list-style-type: none
 	margin: 0
@@ -39,7 +42,8 @@ input, select, button
 	outline: none
 *, *:before, *:after
 	box-sizing: border-box
-
+strong
+	font-weight: bold
 img
 	display: block
 	width: 100%
@@ -54,3 +58,7 @@ img
 	margin: 0 auto
 	max-width: $content-size
 	width: 100%
+	+lg
+		padding: 0 40px
+	+xs
+		padding: 0 10px

@@ -1,0 +1,112 @@
+header
+	position: absolute
+	width: 100%
+	min-height: 183px
+	+md
+		min-height: 280px
+		.logo
+			width: 183px
+			p
+				display: none
+		.contacts
+			display: none
+	+xs
+		min-height: 250px
+		.logo
+			width: 150px
+			height: 150px
+			a
+				width: 150px
+				height: 150px
+				padding: 20px
+	.container
+		position: absolute
+		min-height: 183px
+		color: #fff
+		z-index: 1
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		+md
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			min-height: 280px
+		+xs
+			min-height: 250px
+.logo
+	display: flex
+	align-items: flex-end
+	width: 55%
+	a
+		width: 183px
+		height: 183px
+		display: inline-block
+		cursor:pointer
+		padding: 30px
+		background-color: $accent
+	p
+		font-size: 12px
+		text-align: left
+		margin: 0 0 0 20px
+		text-transform: uppercase
+.contacts
+	width: 25%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	text-align: left
+	font-size: 14px
+	font-weight: 200
+	span
+		display: inline-block
+		width: 100%
+		padding-left: 20px
+		position: relative
+		margin-top: 5px
+		&:before
+			content: ''
+			position: absolute
+			width: 12px
+			height: 12px
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			background-size: 100%
+			background-repeat: no-repeat
+	span:last-child, span:nth-child(2)
+		&:before
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 299.995 299.995' style='enable-background:new 0 0 299.995 299.995;' xml:space='preserve' width='512px' height='512px'%3E%3Cpath d='M149.995,0C67.156,0,0,67.158,0,149.995s67.156,150,149.995,150s150-67.163,150-150S232.834,0,149.995,0z M214.842,178.524H151.25c-0.215,0-0.415-0.052-0.628-0.06c-0.213,0.01-0.412,0.06-0.628,0.06 c-5.729,0-10.374-4.645-10.374-10.374V62.249c0-5.729,4.645-10.374,10.374-10.374s10.374,4.645,10.374,10.374v95.527h54.47 c5.729,0,10.374,4.645,10.374,10.374C225.212,173.879,220.571,178.524,214.842,178.524z' fill='%23FFFFFF'/%3E%3C/svg%3E")
+	span:first-child
+		&:before
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' width='512px' height='512px' viewBox='0 0 97.713 97.713' style='enable-background:new 0 0 97.713 97.713;' xml:space='preserve'%3E%3Cpath d='M48.855,0C29.021,0,12.883,16.138,12.883,35.974c0,5.174,1.059,10.114,3.146,14.684 c8.994,19.681,26.238,40.46,31.31,46.359c0.38,0.441,0.934,0.695,1.517,0.695s1.137-0.254,1.517-0.695 c5.07-5.898,22.314-26.676,31.311-46.359c2.088-4.57,3.146-9.51,3.146-14.684C84.828,16.138,68.69,0,48.855,0z M48.855,54.659 c-10.303,0-18.686-8.383-18.686-18.686c0-10.304,8.383-18.687,18.686-18.687s18.686,8.383,18.686,18.687 C67.542,46.276,59.159,54.659,48.855,54.659z' fill='%23FFFFFF'/%3E%3C/svg%3E")
+.tel
+	width: 200px
+	height: 100%
+	display: flex
+	font-size: 16px
+	flex-direction: column
+	justify-content: flex-end
+	align-items: flex-end
+	+md
+		align-items: center
+	+xs
+		font-size: 12px
+	a:first-child
+		color: #fff
+		font-size: 1.2em
+		margin-bottom: 5px
+		span
+			font-weight: bold
+			font-size: 1.2em
+	a:last-child
+		display: inline-block
+		max-width: 195px
+		padding: 8px 0
+		width: 100%
+		font-size: .9em
+		+xs
+			max-width: 150px
