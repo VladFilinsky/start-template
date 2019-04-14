@@ -8,30 +8,57 @@
 	align-items: center
 	color: #fff
 	+md
+		justify-content: space-around
+		align-items: flex-start
+	+xs
 		flex-direction: column
+		align-items: center
 	.manadger
 		width: 20%
 		text-align: center
 		+md
-			margin-bottom: 20px
+			width: 30%
+		+xs
 			width: 100%
 		img
 			display: inline-block
 			width: 126px
 			height: 126px
+			+md
+				width: 200px
+				height: 200px
+				margin-top: 10px
+			+xs
+				width: 126px
+				height: 126px
+				margin: 0
 		h4
 			font-size: 14px
 			text-transform: uppercase
+			+md
+				font-size: 18px
+			+xs
+				font-size: 14px
 		p 
 			font-size: 12px
 			font-weight: 200
 			line-height: 1.3
+			+md
+				font-size: 14px
+			+xs
+				font-size: 12px
+				margin-bottom: 15px
 	&__form
 		width: 80%
 		+md
+			width: 50%
 			text-align: center
 			max-width: 260px
+			display: flex
+			flex-direction: column
+		+xs
 			width: 100%
+			max-width: 320px
 		h4
 			font-size: 24px
 			font-weight: bold
@@ -39,16 +66,17 @@
 		p
 			font-size: 14px
 			line-height: 1.2
-			margin-bottom: 10px
+			margin-bottom: 20px
 		form
 			+md
 				display: flex
 				flex-direction: column
-				margin-top: 20px
-				input
-					margin-bottom: 15px
+			input
+				margin-right: 14px
+				max-width: 290px
+				+xs
+					max-width: 320px
 			p
-				margin-top: 10px
 				font-size: 12px
 				a
 					text-decoration: none
@@ -56,4 +84,9 @@
 					color: #fff
 					cursor: pointer
 			button
-				padding: 13px 35px
+				padding: 15px 35px
+				max-width: 220px
+				+md
+					width: 100%
+					max-width: 320px
+					margin-bottom: 15px

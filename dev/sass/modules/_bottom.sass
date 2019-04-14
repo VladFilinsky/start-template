@@ -1,0 +1,112 @@
+.s-bottom
+	background-color: $dark
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+.bottom
+	display: flex
+	justify-content: space-between
+	height: 100%
+	+sm
+		flex-direction: column
+		align-items: center
+	.title
+		width: 50%
+		height: 100%
+		padding-top: 120px
+		+md
+			text-align: left
+			padding-top: 60px
+		+sm
+			width: 100%
+			text-align: center
+		h2
+			font-size: 60px
+			span
+				font-weight: 200
+			+md
+				font-size: 34px
+			+xs
+				font-size: 30px
+		p
+			font-size: 24px
+			line-height: 1.6
+			+md
+				font-size: 18px
+			+xs
+				font-size: 16px
+		.social
+			margin-top: 50px
+			+sm
+				width: 100%
+				text-align: center
+				margin: 20px 0 30px 0
+				justify-content: center
+			a > svg
+				width: 100%
+				height: 100%
+				padding: 14px
+				fill: #ffffff
+			a
+				&:hover
+					background-color: #f4f4f4
+					svg
+						fill: #333333
+	.tour
+		position: relative
+		padding: 70px 35px
+		margin-left: 75px
+		min-width: 350px
+		max-width: 400px
+		width: 30%
+		height: 100%
+		background-color: $dark
+		text-align: center
+		color: #fff
+		+md
+			margin-left: 0
+			padding: 40px 35px
+		+xs
+			min-width: 200px
+			width: 100%
+			padding: 40px 20px
+		&:before
+			content: ''
+			position: absolute
+			width: 75px
+			height: 100%
+			top: 0
+			left: -75px
+			background: $btn url(../img/commerce/bottomBg.jpg) center no-repeat
+			background-size: cover
+			+md
+				display: none
+		span
+			display: inline-block
+			width: 130px
+			height: 130px
+			border: 1px solid #f7f7f7
+			border-radius: 50%
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 30%
+			+xs
+				width: 80px
+				height: 80px
+		h3
+			text-transform: uppercase
+			font-weight: 200
+			margin: 30px 0 5px 0
+			+xs
+				font-size: 16px
+				margin-top: 15px
+		p
+			font-size: 12px
+		form
+			margin-top: 20px
+			p > a
+				color: #fff
+				border-bottom: 1px dashed #fff
+			button
+				margin: 15px 0
+				padding: 15px 0

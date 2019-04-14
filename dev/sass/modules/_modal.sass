@@ -1,0 +1,88 @@
+.modal
+	position: reletive
+	min-width: 300px
+	max-width: 350px
+	padding: 40px 40px 60px 40px
+	margin: 150px auto
+	background-color: #f7f7f7
+	background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 123 138' style='enable-background:new 0 0 123 138;' xml:space='preserve'%3E%3Cpolygon fill='%23E1DBD4' points='112.2,138 123,138 123,137.71 70.91,107.63 70.91,99.08 123,129.16 123,122.63 70.91,92.56 70.91,84.01 123,114.09 123,107.56 70.91,77.48 70.91,68.94 123,99.01 123,92.49 70.91,62.41 70.91,53.86 123,83.94 123,77.41 70.91,47.33 70.91,38.79 123,68.87 123,62.34 70.91,32.26 70.91,23.72 123,53.79 123,47.27 70.91,17.19 70.91,8.3 123,38.43 123,31.9 68.38,0.3 0,39.78 0,138 5.64,138 5.64,43.06 13.04,38.79 13.04,138 18.69,138 18.69,35.52 26.09,31.25 26.09,138 31.75,138 31.75,27.98 39.15,23.71 39.15,138 44.8,138 44.8,20.45 52.2,16.18 52.2,138 57.85,138 57.85,12.91 65.25,8.64 65.25,138 71.3,138 70.91,137.78 70.91,129.23 86.1,138 97.4,138 70.91,122.7 70.91,114.16 '/%3E%3C/svg%3E")
+	background-size: 85px
+	background-repeat: no-repeat
+	background-position: right bottom
+	color: #333
+	+sm
+		margin: 50px auto
+	&-close
+		position: absolute
+		top: -45px
+		right: -10px
+		font-family: $open-sans-font
+		font-weight: 200
+		font-size: 50px
+.mfp-move-from-top.mfp-ready.mfp-bg
+	background-color: #333
+	opacity: .97 !important
+.mfp-close-btn-in .mfp-close
+	color: #f7f7f7
+#callback__form-popup, #written
+	text-align: center
+	h2
+		font-size: 18px
+		margin-bottom: 5px
+	form
+		margin-top: 20px
+		p
+			font-size: 10px
+			margin-bottom: 20px
+			a
+				color: $btn
+				text-decoration: underline $btn
+#thanks
+	min-width: 400px
+	span
+		display: inline-block
+		width: 100%
+		position: relative
+		padding-left: 55px
+		font-size: 14px
+		line-height: 1.6
+		font-weight: 200
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 40px
+			height: 100%
+			background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.001 512.001' style='enable-background:new 0 0 512.001 512.001;' xml:space='preserve'%3E%3Cpath fill='%231476ca' d='M509.532,34.999c-2.292-2.233-5.678-2.924-8.658-1.764L5.213,225.734c-2.946,1.144-4.967,3.883-5.192,7.034 c-0.225,3.151,1.386,6.149,4.138,7.7l102.719,57.875l35.651,174.259c0.222,1.232,0.723,2.379,1.442,3.364 c0.072,0.099,0.131,0.175,0.191,0.251c1.256,1.571,3.037,2.668,5.113,3c0.265,0.042,0.531,0.072,0.795,0.088 c0.171,0.011,0.341,0.016,0.511,0.016c1.559,0,3.036-0.445,4.295-1.228c0.426-0.264,0.831-0.569,1.207-0.915 c0.117-0.108,0.219-0.205,0.318-0.306l77.323-77.52c3.186-3.195,3.18-8.369-0.015-11.555c-3.198-3.188-8.368-3.18-11.555,0.015 l-60.739,60.894l13.124-112.394l185.495,101.814c1.868,1.02,3.944,1.239,5.846,0.78c0.209-0.051,0.4-0.105,0.589-0.166 c1.878-0.609,3.526-1.877,4.574-3.697c0.053-0.094,0.1-0.179,0.146-0.264c0.212-0.404,0.382-0.8,0.517-1.202L511.521,43.608 C512.6,40.596,511.824,37.23,509.532,34.999z M27.232,234.712L432.364,77.371l-318.521,206.14L27.232,234.712z M162.72,316.936 c-0.764,0.613-1.429,1.374-1.949,2.267c-0.068,0.117-0.132,0.235-0.194,0.354c-0.496,0.959-0.784,1.972-0.879,2.986L148.365,419.6 l-25.107-122.718l275.105-178.042L162.72,316.936z M359.507,419.195l-177.284-97.307L485.928,66.574L359.507,419.195z'/%3E%3C/svg%3E")
+			background-size: 100%
+			background-position: center
+			background-repeat: no-repeat
+#text
+	text-align: center
+	h2
+		font-size: 18px
+		margin-bottom: 5px
+	.hr__dirt
+		margin-bottom: 15px
+#write
+/* Анимация "Сверху" */
+.mfp-move-from-top .mfp-content
+	vertical-align: top
+.mfp-move-from-top .mfp-with-anim 
+	opacity: 0
+	transition: all 0.2s
+	transform: translateY(-100px)
+.mfp-move-from-top.mfp-bg 
+	opacity: 0
+	transition: all 0.2s
+.mfp-move-from-top.mfp-ready .mfp-with-anim 
+	opacity: 1
+	transform: translateY(0)
+.mfp-move-from-top.mfp-ready.mfp-bg 
+	opacity: 0.8
+.mfp-move-from-top.mfp-removing .mfp-with-anim 
+	transform: translateY(-50px)
+	opacity: 0
+.mfp-move-from-top.mfp-removing .mfp-bg 
+	opacity: 0

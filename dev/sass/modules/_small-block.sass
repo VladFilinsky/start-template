@@ -41,11 +41,13 @@
 	padding: 90px 0 70px 0
 	position: relative
 	+sm
-		padding: 70px 0 50px 0
+		padding: 50px 0 50px 0
 	h2
 		text-align: center
 		font-size: 39px
 		font-weight: 200
+		+md
+			font-size: 34px
 		+xs
 			font-size: 26px
 	span
@@ -58,7 +60,7 @@
 		width: 22px
 		height: 22px
 		top: 106px
-		+sm
+		+md
 			display: none
 		&:before
 			content: ''
@@ -90,7 +92,7 @@
 		right: 55px
 		transform: rotate(180deg)
 /* Зеленая полоса*/
-.hr, .hr__small
+.hr, .hr__small, .hr__dirt
 		display: inline-block
 		position: relative
 		width: 40px
@@ -101,6 +103,10 @@
 .hr__small
 	width: 27px
 	height: 5px
+.hr__dirt
+	background-color: $dirt
+	height: 6px
+	width: 35px
 .circle 
 	display: block
 	position: absolute
@@ -110,7 +116,7 @@
 	background: linear-gradient(144deg, #461393 0%, #3276b0 45%, #c2dff6 100%)
 	box-shadow: 2px 2px 5px rgba(#000, .2)
 /* OVERLAY SECTION */
-.overlay, .overlay__park
+.overlay, .overlay__park, .overlay__white
 	&::before
 		position: absolute
 		z-index: 0
@@ -123,13 +129,33 @@
 .overlay__park
 	&::before
 		background: linear-gradient(90deg, rgba(#181818, .55%) 0%, rgba(#181818, .25%) 100%)
+.overlay__white
+	&::before
+		background: #fff
+		opacity: .85
+.social
+	display: flex
+	a
+		display: inline-block
+		width: 55px
+		height: 55px
+		border: 1px solid $dark
+		background-color: $dark
+		border-radius: 50%
+		margin-right: 10px
+		transition: .45s ease
 form
 	input
-		outline: none
+		width: 100%
+		font-weight: 200
+		font-size: 15px
 		border: 1px solid #ebebeb
 		border-radius: 3px
-		padding: 9px 0 9px 15px
-		min-width: 260px
-		margin-right: 14px
+		padding: 15px 0 15px 15px
+		margin-bottom: 15px
 		color: #979797
 		box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 1, 0.1)
+	p
+		font-size: 12px
+	button
+		width: 100%

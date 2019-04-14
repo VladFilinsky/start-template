@@ -1,0 +1,35 @@
+<section>
+	<div class="container">
+		<div class="subtitle">
+			<span></span>
+			<h2><strong>Коммерческая недвижимость</strong><br> ЖК "За ручьем"</h2>
+			<span></span>
+		</div>
+	</div>
+	<div class="layout">
+		<div class="container">
+			<div class="layout__subtitle">
+				<span>выберите объект</span>
+			</div>
+			<ul class="layout__nav">
+				<li class="active">ЖК "За ручьем" (Дом 7)</li>
+				<li>ЖК "За ручьем" (Дом 6)</li>
+				<li>ЖК "За ручьем" (Дом 5)</li>
+				<li>Другие объекты</li>
+			</ul>
+			<div class="layout__subtitle">
+				<span>выберите помещение</span>
+				<span>Информация о помещении</span>
+			</div>
+			<!-- HOME 7 -->
+			{% include "partials/commerce/home-7.html" %}
+			<!-- HOME 6 -->
+			{% include "partials/commerce/home-6.html" %}
+			<!-- HOME 5 -->
+			{% include "partials/commerce/home-5.html" %}
+			<!-- HOME Other -->
+			{% include "partials/commerce/other.html" %}
+
+		</div><!-- container -->
+	</div><!-- layout -->
+</section>

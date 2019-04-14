@@ -1,0 +1,234 @@
+.layout
+	padding-bottom: 120px
+	min-height: 900px
+	+sm
+		padding-bottom: 50px
+	&__subtitle
+		text-transform: uppercase
+		margin-top: 20px
+		margin-bottom: 20px
+		span:first-child
+			&:before
+				content: ''
+				display: inline-block
+				height: 22px
+				width: 22px
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 513.32 513.32'%3E%3Cg fill='%23b1cb54'%3E%3Cpath d='M235.272 235.272h42.777V384.99h-42.777zm0-106.942h42.777v64.165h-42.777z'/%3E%3Cpath d='M256.66 0C115.497 0 0 115.497 0 256.66s115.497 256.66 256.66 256.66 256.66-115.497 256.66-256.66S397.823 0 256.66 0zm0 470.543c-117.636 0-213.883-96.247-213.883-213.883S139.024 42.777 256.66 42.777s213.883 96.247 213.883 213.883-96.247 213.883-213.883 213.883z'/%3E%3C/g%3E%3C/svg%3E")
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 100%
+				margin-right: 10px
+				transform: translateY(20%)
+		span:nth-child(2)
+			margin-left: 80px
+			text-transform: none
+			+md
+				display: none
+	&__nav
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		margin-bottom: 20px
+		+md
+			justify-content: center
+		.active
+			background-color: #333
+			color: #fff
+		li
+			text-align: center
+			display: inline-block
+			text-decoration: none
+			width: 23%
+			color: #858585
+			font-weight: bold
+			border: 1px solid #333
+			line-height: 3.5
+			margin-right: 15px
+			transition: .35s ease
+			+md
+				width: 47%
+				margin-bottom: 15px
+			+xs
+				width: 100%
+				margin-right: 0
+			&:hover
+				color: #fff
+				background-color: #333
+				cursor: pointer
+			&:last-child
+.card
+	display: none
+	min-height: 600px
+	width: 100%
+	justify-content: space-between
+	overflow-x: hidden
+	transition: .35s ease
+	+md
+		flex-direction: column
+		align-items: center
+	&__select
+		display: inline-block
+		width: 23%
+		flex-shrink: 0
+		+md
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+		.active
+			background-color: $accent
+			color: #fff
+		li
+			margin-bottom: 20px
+			display: inline-block
+			color: #858585
+			padding: 15px 0 15px 30px
+			border: 1px solid $accent
+			width: 100%
+			transition: .35s ease
+			+md
+				width: 47%
+				margin-right: 15px
+			+xs
+				width: 100%
+				margin-right: 0
+			&:hover
+				color: #fff
+				background-color: $accent
+				cursor: pointer
+			h5
+				margin: 0
+				text-transform: none
+				font-size: 18px
+			p
+				margin: 0
+				font-weight: 200
+				span
+					display: inline-block
+					margin-left: 20px
+.card__info
+	display: none
+	width: 74%
+	background-color: #fafafa
+	border-radius: 3px
+	box-shadow: 0px 5px 9px 1px rgba(0, 0, 1, 0.1)
+	padding: 40px 40px 55px 40px
+	justify-content: space-between
+	+md
+		width: 100%
+	+sm
+		padding: 20px 20px 30px 20px
+	+xs
+		flex-direction: column
+	&-box
+		width: 48%
+		+xs
+			width: 100%
+			text-align: center
+			margin-bottom: 20px
+		p
+			font-size: 13px
+			line-height: 1.9
+			margin-top: 40px
+	&-slider
+		background-color: #fff
+		padding: 20px 0
+		text-align: center
+		position: relative
+		min-height: 290px
+		.owl-carousel .owl-item 
+    	height: 100%
+		.owl-next, .owl-prev
+			position: absolute
+			width: 40px
+			height: 40px
+			top: 40%
+			margin-top: -20px		
+			span
+				color: #929292
+				opacity: .7
+				font-size: 55px
+				font-weight: 200
+		.owl-next
+			right: 3%
+			+xs
+				right: 0
+		.owl-prev
+			left: 3%
+			+xs
+				left: 0
+		img
+			height: 250px
+			max-width: 250px
+			display: block
+			margin: 0 auto
+	&-price
+		width: 48%
+		+xs
+			width: 100%
+		p
+			position: relative
+			color: #949494
+			font-weight: 200
+			margin-bottom: 10px
+			&:first-of-type
+				font-size: 13px
+				+xs
+					text-align: center
+			span
+				position: absolute
+				right: 15px
+				display: inline-block
+				color: #333
+			&:last-child
+				font-size: 14px
+				margin-top: 5px
+				color: #333
+		h3
+			font-weight: 400
+			font-size: 21px
+			text-transform: uppercase
+			+xs
+				text-align: center
+		a
+			padding: 10px 60px
+			margin: 15px 0
+			+xs
+				display: block
+				max-width: 220px
+				margin: 10px auto
+		p:nth-child(11)
+			font-weight: 400
+			margin-bottom: 5px
+		p[data-price="old"]
+			text-decoration: line-through
+			font-weight: bold
+			margin-bottom: 0
+		p[data-price="new"]
+			font-weight: bold
+			font-size: 24px
+			color: #000
+			margin-bottom: 5px
+		ul
+			color: $green
+			font-weight: bold
+			li
+				position: relative
+				padding-left: 20px
+				&:before
+					content: ''
+					position: absolute
+					width: 14px
+					height: 100%
+					top: 0
+					left: 0
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 426.667 426.667' style='enable-background:new 0 0 426.667 426.667;' xml:space='preserve'%3E%3Cpath fill='%236a8c75' d='M362.667,42.667h-21.333V0h-42.667v42.667H128V0H85.333v42.667H64c-23.573,0-42.453,19.093-42.453,42.667L21.333,384 c0,23.573,19.093,42.667,42.667,42.667h298.667c23.573,0,42.667-19.093,42.667-42.667V85.333 C405.333,61.76,386.24,42.667,362.667,42.667z M362.667,384H64V149.333h298.667V384z'/%3E%3Cpolygon fill='%236a8c75' points='309.973,214.613 287.36,192 183.253,296.107 138.027,250.88 115.413,273.493 183.253,341.333 '/%3E%3C/svg%3E%0A")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: 100%
+.card__info.active
+	display: flex
+.card.active
+	display: flex

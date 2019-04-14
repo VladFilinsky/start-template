@@ -15,6 +15,14 @@
 =rhmin($height)
   @media only screen and (min-height: $height + "px")
     @content
+=desktopHeight
+  @media screen and (max-width: 1100px) and (min-height: 900px) 
+    @content
+=mobileHeight
+  @media screen and (max-width: 690px) 
+    @content
+  @media screen and (max-height: 620px) 
+    @content
 
 @function em($size, $context: 16)
   @return ($size/$context) * 1em
