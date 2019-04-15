@@ -12,19 +12,17 @@
 	color: #333
 	+sm
 		margin: 50px auto
-	&-close
-		position: absolute
-		top: -45px
-		right: -10px
-		font-family: $open-sans-font
-		font-weight: 200
-		font-size: 50px
 .mfp-move-from-top.mfp-ready.mfp-bg
 	background-color: #333
 	opacity: .97 !important
 .mfp-close-btn-in .mfp-close
 	color: #f7f7f7
-#callback__form-popup, #written
+	top: -45px
+	right: -10px
+	font-family: $open-sans-font
+	font-weight: 200
+	font-size: 50px
+#callback, #written
 	text-align: center
 	h2
 		font-size: 18px
@@ -65,6 +63,11 @@
 		margin-bottom: 5px
 	.hr__dirt
 		margin-bottom: 15px
+.modal-video
+	max-width: 800px
+	padding: 0
+	+sm
+		margin: 80px auto
 #write
 /* Анимация "Сверху" */
 .mfp-move-from-top .mfp-content

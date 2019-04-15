@@ -1,4 +1,4 @@
-.top
+.s-top
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center top
@@ -7,7 +7,9 @@
 	padding: 400px 0 200px 0
 	+md
 		padding: 300px 0 100px 0
-	.container
+	+xs
+		padding: 250px 0 50px 0
+	.top
 		display: flex
 		justify-content: space-between
 		+lg
@@ -50,7 +52,7 @@
 		min-height: 400px
 		justify-content: center
 	+xs
-		min-height: 740px
+		
 	&__item
 		min-height: 50px
 		position: relative
@@ -62,6 +64,7 @@
 		+xs
 			width: 100%
 			padding: 60px 0 0 0
+			margin-bottom: 25px
 		span
 			display: inline-block
 			position: absolute

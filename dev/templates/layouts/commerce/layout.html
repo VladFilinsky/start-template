@@ -14,26 +14,8 @@
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
   <body>
-    <style>
-      body {
-        opacity: 0;
-      }
-    </style>
-    <!-- BEGIN content -->
-    <div class="out">
-      {% block content %}{% endblock %}
-    </div>
-    <!-- END content -->
-
-    <!-- BEGIN scripts -->
-    <style>
-      body{
-        opacity: 1;
-      }
-    </style>
+    {% block content %}{% endblock %}
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- END scripts -->
-
   </body>
 </html>
