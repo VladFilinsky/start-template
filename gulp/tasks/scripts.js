@@ -12,7 +12,8 @@ module.exports = function () {
             'node_modules/owl.carousel/dist/owl.carousel.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
             'node_modules/imask/dist/imask.min.js',
-            'node_modules/js-cookie/src/js.cookie.js'])
+            'node_modules/js-cookie/src/js.cookie.js',
+            'node_modules/wowjs/dist/wow.min.js'])
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
     });
@@ -23,7 +24,8 @@ module.exports = function () {
             'node_modules/owl.carousel/dist/owl.carousel.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
             'node_modules/imask/dist/imask.min.js',
-            'node_modules/js-cookie/src/js.cookie.js'])
+            'node_modules/js-cookie/src/js.cookie.js',
+            'node_modules/wowjs/dist/wow.min.js'])
             .pipe(concat('libs.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.ouput));

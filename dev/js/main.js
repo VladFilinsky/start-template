@@ -2,6 +2,8 @@ $(function() {
 
   svg4everybody({});
 
+  new WOW().init();
+  
 	// imask
   var phoneMask = new IMask(
     document.getElementById('questions-phone'), {
@@ -42,14 +44,16 @@ $(".card__info-slider").owlCarousel({
     nav: true
 });
   /* MODAL "FORM-CALLBACK" */
-$('a[href="#callback"],a[href="#thanks"],a[href="#text"],a[href="#written"]').magnificPopup({
+$('a[href="#callback"],a[href="#thanks"],a[href="#text"],a[href="#written"],a[href="#location"],a[href="#konfedensial"],a[href="#project"]').magnificPopup({
     type: 'inline',
     focus: 'input',
+    fixedContentPos: true,
     removalDelay: 500,
     callbacks: {
         beforeOpen: function () {
             this.st.mainClass = this.st.el.attr('data-effect');
-          }},
+          }
+        },
     midClick: true
   });
 /* MODAL "VIDEO" */
@@ -120,6 +124,7 @@ $('ul.card__select').on('click', 'li:not(.active)', function() {
 // $('.cookie__btn').click(function(){
 //     $('.cookie').removeClass('cookie__show').delay('500').fadeOut();
 // });
+
 }); //jquery
 /* PRELOADER */
 $(window).on('load', (function() {

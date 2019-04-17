@@ -20,30 +20,29 @@
 	&__box
 		display: flex
 		flex-direction: column
-		justify-content: space-between
 		align-items: center
 		color: #333
 		text-align: center
 		width: 31%
 		min-height: 345px
-		padding: 40px
+		padding: 40px 40px 90px 40px
 		box-shadow: 0px 7px 14.58px 3.42px rgba(0, 0, 1, 0.13)
 		position: relative
 		transition: .45s ease
 		+lg
-			padding:  40px 20px
+			padding:  40px 20px 90px 20px
 		+md
 			width: 40%
-			padding: 40px
+			padding: 40px 40px 90px 40px
 		+r(890)
-			padding: 40px 20px
+			padding: 40px 20px 90px 20px
 		+sm
 			width: 60%
-			padding: 40px
+			padding: 40px 40px 90px 40px
 			margin-bottom: 40px
 		+xs
 			width: 100%
-			padding: 40px 30px
+			padding: 40px 30px 90px 30px
 		&:before
 			content: ''
 			position: absolute
@@ -56,7 +55,7 @@
 			font-size: 30px
 			margin-bottom: 10px
 		p
-			margin-top: 10px
+			margin: 10px 0 20px 0
 			text-transform: uppercase
 			font-size: 14px
 		span
@@ -64,7 +63,7 @@
 			width: 100%
 			font-size: 14px
 			text-align: left
-			margin-top: 20px
+			margin-bottom: 20px
 			position: relative
 			padding-left: 30px
 			&:before
@@ -79,6 +78,8 @@
 				background-repeat: no-repeat
 				background-position: center
 		button
+			position: absolute
+			bottom: 42px
 			margin: 30px 0 8px 0
 			transition: .45s ease
 .condition__box:hover

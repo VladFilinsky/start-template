@@ -68,6 +68,41 @@
 	padding: 0
 	+sm
 		margin: 80px auto
+#location
+	max-width: 800px
+	height: auto
+	padding: 0
+	position: relative
+	background-color: #333
+	border: none
+	background-image: none
+#konfedensial, #project
+	max-width: 1000px
+	position: relative
+	font-weight: 200
+	display: flex
+	flex-direction: column
+	+xs
+		padding: 40px 10px
+		h2
+			font-size: 16px
+#project
+	p
+		margin-bottom: 30px
+	ul
+		padding-left: 35px
+		margin-bottom: 10px
+		li
+			position: relative
+			margin-bottom: 10px
+			&:before
+				content: ''
+				top: 50%
+				left: -26px
+				position: absolute
+				height: 1px
+				width: 13px
+				background-color: #ad9a82
 #write
 /* Анимация "Сверху" */
 .mfp-move-from-top .mfp-content
