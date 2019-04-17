@@ -1,9 +1,8 @@
 $(function() {
+
   svg4everybody({});
 
-  //     new WOW.WOW({
-  //   live:false
-  // }).init();
+  
 
 	// imask
   var phoneMask = new IMask(
@@ -111,5 +110,20 @@ $('ul.card__select').on('click', 'li:not(.active)', function() {
     }
    });
     // ======= end ========
-  
+  // Cookie
+  Cookies.remove('zrc');
+ var cookieOptions = { expires: 30, path: '/' };
+  if (Cookies.set('zrc') == undefined) {
+    setTimeout(function() {
+    Cookies.set('zrc', 'true', cookieOptions);
+    $('.cookie').addClass('cookie__show');
+  }, 3000);
+ }
+$('.cookie__btn').click(function(){
+    $('.cookie').removeClass('cookie__show').delay('500').fadeOut();
 });
+});
+/* PRELOADER */
+$(window).on('load', (function() {
+  $('.preloader').delay(400).fadeOut('slow');
+}));

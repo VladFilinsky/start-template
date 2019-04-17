@@ -1,0 +1,37 @@
+.cookie
+	width: 60%
+	height: 50px
+	background-color: #fff
+	position: fixed
+	display: flex
+	justify-content: center
+	align-items: center
+	top: 0
+	left: 50%
+	transform: translate(-50%, -100%)
+	z-index: 900
+	border-bottom-left-radius: 60px
+	border-bottom-right-radius: 60px
+	transition: .45s ease-in-out
+	//-webkit-transform: translateZ(0)
+	+r(1500)
+		width: 80%
+	+md
+		font-size: 14px
+		width: 100%
+	+sm
+		font-size: 12px
+		padding: 10px 30px
+		height: auto
+
+
+	&__btn
+		margin-left: 20px
+		padding: 5px 20px
+		+xs
+			margin-left: 5px
+	&__show
+		transform: translate(-50%, 0)
+		display: flex
+
+

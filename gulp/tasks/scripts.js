@@ -11,17 +11,19 @@ module.exports = function () {
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
             'node_modules/owl.carousel/dist/owl.carousel.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-            'node_modules/imask/dist/imask.min.js'])
+            'node_modules/imask/dist/imask.min.js',
+            'node_modules/js-cookie/src/js.cookie.js'])
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
     });
 
     $.gulp.task('libsJS:build', () => {
         return $.gulp.src(['node_modules/jquery/dist/jquery.min.js',
-            'node_modules/svg4everybody/dist/svg4everybody.min.js'],
+            'node_modules/svg4everybody/dist/svg4everybody.min.js',
             'node_modules/owl.carousel/dist/owl.carousel.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-            'node_modules/imask/dist/imask.min.js')
+            'node_modules/imask/dist/imask.min.js',
+            'node_modules/js-cookie/src/js.cookie.js'])
             .pipe(concat('libs.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.ouput));

@@ -37,6 +37,7 @@
   "dependencies": {
     "imask": "^4.1.5",
     "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.0",
     "owl-carousel": "^1.0.0",
