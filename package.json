@@ -43,6 +43,7 @@
     "normalize.css": "^8.0.0",
     "owl-carousel": "^1.0.0",
     "owl.carousel": "^2.3.4",
+    "owl.carousel2.thumbs": "^0.1.8",
     "svg4everybody": "^2.1.9",
     "wowjs": "^1.1.3"
   }

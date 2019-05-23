@@ -14,8 +14,22 @@ body
 h1, h2, h3, h4, h5, h6 
 	margin: 0
 	font-family: $default-font
-h1, h2
+h1, h2, h3
 	text-transform: uppercase
+h3
+	font-size: 30px
+	font-weight: 200
+	margin-bottom: 15px
+	+md
+		font-size: 26px
+	+sm
+		text-align: center
+h5
+	font-size: 18px
+	text-transform: uppercase
+	font-weight: 600
+	+sm
+		font-size: 16px
 ul, li
 	list-style-type: none
 	margin: 0
@@ -62,3 +76,320 @@ img
 		padding: 0 40px
 	+xs
 		padding: 0 10px
+
+.btn
+	font-family: $open-sans-font
+	display: inline-block
+	border: 2px solid $btn
+	color: #fff
+	text-decoration: none
+	background-color: $btn
+	padding: 10px 28px
+	font-size: 14px
+	text-transform: uppercase
+	font-weight: 600
+	border-radius: 38px
+	text-align: center
+	white-space: nowrap
+	position: relative
+	outline: none
+	transition:  .25s ease
+	cursor: pointer
+	box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 1, 0.1)
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: #fff
+		color: #333
+		border: 2px solid $btn
+	&:active
+		background-color: lighten($btn, 35%)
+.btn__green
+	background-color: $green
+	border: 2px solid $green
+	padding: 10px 30px
+	&:hover
+		background-color: #fff
+		border: 2px solid $green
+		color: #333
+	&:active
+		background-color: lighten($green, 35%)
+
+.subtitle
+	padding: 90px 0 70px 0
+	position: relative
+	+sm
+		padding: 50px 0 50px 0
+	h2
+		text-align: center
+		font-size: 39px
+		font-weight: 200
+		+md
+			font-size: 34px
+		+xs
+			font-size: 26px
+	&__text
+		text-align: center
+		margin-top: -40px
+		font-size: 18px
+		font-weight: 200
+	span
+		position: absolute
+		content: ''
+		display: inline-block
+		border: 1px solid $btn
+		border-radius: 50%
+		background-color: $btn
+		width: 22px
+		height: 22px
+		top: 106px
+		+md
+			display: none
+		&:before
+			content: ''
+			display: inline-block
+			position: absolute
+			border: 1px solid $btn
+			border-radius: 50%
+			background-color: $btn
+			width: 16px
+			height: 16px
+			left: -35px
+			top: 50%
+			transform: translateY(-50%)
+		&:after
+			content: ''
+			display: inline-block
+			position: absolute
+			border: 1px solid $btn
+			border-radius: 50%
+			background-color: $btn
+			width: 30px
+			height: 30px
+			right: -45px
+			top: 50%
+			transform: translateY(-50%)
+	span:first-child
+		left: 55px
+	span:last-child
+		right: 55px
+		transform: rotate(180deg)
+/* Зеленая полоса*/
+.hr, .hr__small, .hr__dirt
+		display: inline-block
+		position: relative
+		width: 40px
+		height: 8px
+		background-color: $green
+		border: none
+		margin-left: 5px
+.hr__small
+	width: 27px
+	height: 5px
+.hr__dirt
+	background-color: $dirt
+	height: 6px
+	width: 35px
+.circle 
+	display: block
+	position: absolute
+	content: ''
+	border-radius: 50%
+	background-color: $btn
+	background: linear-gradient(144deg, #461393 0%, #3276b0 45%, #c2dff6 100%)
+	box-shadow: 2px 2px 5px rgba(#000, .2)
+/* OVERLAY SECTION */
+.overlay, .overlay__park, .overlay__white
+	&::before
+		position: absolute
+		z-index: 0
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(39deg, rgba(#000, .80%) 0%, rgba(#000, .30%) 100%)
+.overlay__park
+	&::before
+		background: linear-gradient(90deg, rgba(#181818, .55%) 0%, rgba(#181818, .25%) 100%)
+.overlay__white
+	&::before
+		background: #fff
+		opacity: .85
+.social
+	display: flex
+	a
+		display: inline-block
+		width: 55px
+		height: 55px
+		border: 2px solid $dark
+		background-color: $dark
+		border-radius: 50%
+		margin-right: 10px
+		transition: .45s ease
+form
+	input
+		width: 100%
+		font-weight: 200
+		font-size: 15px
+		border: 1px solid #ebebeb
+		border-radius: 3px
+		padding: 15px 0 15px 15px
+		margin-bottom: 15px
+		color: #979797
+		box-shadow: 0px 2px 4.85px 0.15px rgba(0, 0, 1, 0.1)
+	p
+		font-size: 12px
+	button
+		width: 100%
+// Карточка с акцией
+.proposal
+	margin: 70px 0 90px 0
+	padding-bottom: 70px
+	background-color: #efefef
+	text-align: center
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 15%
+		height: 100%
+		background: url(../img/share/cherry.jpg) center no-repeat
+		background-size: cover
+		+sm
+			display: none
+	&__icon
+		position: absolute
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 90px
+		height: 90px
+		&:before
+			content: ''
+			position: absolute
+			left: 5px
+			top: 5px
+			width: 80px
+			height: 80px
+			background: $green url(../img/share/star.svg) center no-repeat
+			background-size: 50%
+			border-radius: 50%
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 90px
+			height: 90px
+			border: 1px solid #b8b8b8
+			border-radius: 50%
+	&__text
+		font-size: 24px
+		font-weight: 200
+		padding:  60px 0 25px 0
+		line-height: 1.5
+		+sm
+			font-size: 18px
+		strong
+			text-transform: uppercase
+	&__price
+		position: relative
+		display: inline-block
+		text-transform: uppercase
+		&:after
+			content: ''
+			position: absolute
+			height: 100%
+			right: 0
+			top: 2px
+			background-size: 100%
+			background-position: center
+			background-repeat: no-repeat
+		&-old
+			font-size: 24px
+			font-weight: 200
+			color: #858585
+			text-decoration: line-through
+			padding-right: 20px
+			+sm
+				font-size: 20px
+			&:after
+				width: 18px
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cpath fill='%23858585' d='M288,320c88.359,0,160-71.633,160-160S376.359,0,288,0c-0.016,0-0.016,0-0.031,0H117.328 c-5.891,0-10.656,4.773-10.656,10.664v287.992h-32c-5.891,0-10.672,4.781-10.672,10.688C64,315.219,68.781,320,74.672,320h32 v42.656h-32c-5.891,0-10.672,4.781-10.672,10.688C64,379.219,68.781,384,74.672,384h32v117.344 c0,5.875,4.766,10.656,10.656,10.656S128,507.219,128,501.344V384h181.328c5.891,0,10.672-4.781,10.672-10.656 c0-5.906-4.781-10.688-10.672-10.688H128V320H288z M128,21.336h159.969H288c18.734,0,36.891,3.664,53.969,10.883 c16.516,6.984,31.344,16.984,44.078,29.727c12.75,12.742,22.75,27.578,29.734,44.086C423,123.109,426.672,141.273,426.672,160 s-3.672,36.891-10.891,53.969c-6.984,16.508-16.984,31.344-29.734,44.086c-12.734,12.742-27.562,22.742-44.078,29.727 C324.891,295,306.734,298.656,288,298.656H128V21.336z'/%3E%3C/svg%3E")
+		&-new
+			font-size: 48px
+			font-weight: 700
+			margin-top: 5px
+			padding-right: 38px
+			color: $green
+			+sm
+				font-size: 38px
+			&:after
+				width: 33px
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='510.127px' height='510.127px' viewBox='0 0 510.127 510.127' style='enable-background:new 0 0 510.127 510.127;' xml:space='preserve'%3E%3Cpath fill='%236a8c75' d='M34.786,428.963h81.158v69.572c0,3.385,1.083,6.156,3.262,8.322c2.173,2.18,4.951,3.27,8.335,3.27h60.502 c3.14,0,5.857-1.09,8.152-3.27c2.295-2.166,3.439-4.938,3.439-8.322v-69.572h182.964c3.377,0,6.156-1.076,8.334-3.256 c2.18-2.178,3.262-4.951,3.262-8.336v-46.377c0-3.365-1.082-6.156-3.262-8.322c-2.172-2.18-4.957-3.27-8.334-3.27H199.628v-42.754 h123.184c48.305,0,87.73-14.719,118.293-44.199c30.551-29.449,45.834-67.49,45.834-114.125c0-46.604-15.283-84.646-45.834-114.125 C410.548,14.749,371.116,0,322.812,0H127.535c-3.385,0-6.157,1.089-8.335,3.256c-2.173,2.179-3.262,4.969-3.262,8.335v227.896 H34.786c-3.384,0-6.157,1.145-8.335,3.439c-2.172,2.295-3.262,5.012-3.262,8.151v53.978c0,3.385,1.083,6.158,3.262,8.336 c2.179,2.18,4.945,3.256,8.335,3.256h81.158v42.754H34.786c-3.384,0-6.157,1.09-8.335,3.27c-2.172,2.166-3.262,4.951-3.262,8.322 v46.377c0,3.385,1.083,6.158,3.262,8.336C28.629,427.887,31.401,428.963,34.786,428.963z M199.628,77.179h115.938 c25.6,0,46.248,7.485,61.953,22.46c15.697,14.976,23.549,34.547,23.549,58.691c0,24.156-7.852,43.733-23.549,58.691 c-15.705,14.988-36.354,22.473-61.953,22.473H199.628V77.179z'/%3E%3C/svg%3E")
+// Текст с иконкой
+.text--icon
+	display: flex
+	width: 100%
+	padding: 15px 0 35px 0
+	span
+		margin-left: 20px
+		flex: 1 0 auto
+		display: block
+		padding-right: 20px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			height: 1px
+			left: 0
+			right: 35px
+			top: 50%
+			background-color: #333
+			opacity: .4
+		&:after
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			width: 18px
+			height: 100%
+			background: url(../img/share/info.svg) center no-repeat
+			background-size: 100%
+// Слайдер с табами
+.owl__thumbs
+	display: flex
+	flex-wrap: wrap
+	padding: 20px 0
+	button:nth-child(4), button:nth-child(8)
+		margin-right: 0
+	button:nth-child(1), button:nth-child(5)
+		margin-left: 0
+	&-item
+		position: relative
+		width: calc(25% - 8px)
+		padding-bottom: 20%
+		background: no-repeat center
+		background-size: cover
+		margin: 5px
+		border: none
+		cursor: pointer
+		//transition: .3s ease-out
+.owl__thumbs-item.active
+	&:before
+		position: absolute
+		content: ''
+		z-index: 100
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(#36578a, .8) url(../img/logo_notext.svg) center  20px no-repeat
+		background-size: 70%
+

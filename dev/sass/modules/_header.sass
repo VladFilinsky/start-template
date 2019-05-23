@@ -3,13 +3,15 @@ header
 	width: 100%
 	min-height: 183px
 	+md
+		p
+			display: none
+		.contacts
+			display: none
+	+sm
 		min-height: 280px
 		.logo
 			width: 183px
-			p
-				display: none
-		.contacts
-			display: none
+
 	+xs
 		min-height: 250px
 		.logo
@@ -30,6 +32,8 @@ header
 		align-items: flex-end
 		justify-content: space-between
 		+md
+			align-items: center
+		+sm
 			flex-direction: column
 			justify-content: space-between
 			align-items: center
@@ -40,11 +44,13 @@ header
 	display: flex
 	align-items: flex-end
 	width: 55%
+	+lg
+		width: 50%
 	a, span
 		width: 183px
 		height: 183px
 		display: inline-block
-		cursor:pointer
+		cursor: pointer
 		padding: 30px
 		background-color: $accent
 	p
@@ -61,6 +67,8 @@ header
 	text-align: left
 	font-size: 14px
 	font-weight: 200
+	+lg
+		width: 35%
 	span > a
 		color: #fff
 		border-bottom: 1px dashed #fff

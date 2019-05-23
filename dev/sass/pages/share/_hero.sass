@@ -1,0 +1,167 @@
+.s-hero
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center top
+	background-color: #333
+	color: #fff
+	padding: 300px 0 100px 0
+	+md
+		padding: 300px 0 50px 0
+	+xs
+		padding: 250px 0 50px 0
+	.hero
+		display: flex
+		justify-content: space-between
+		+md
+			flex-wrap: wrap
+			padding-top: 50px
+		+sm
+			justify-content: center
+		&__bottom
+			position: relative
+			padding-top: 70px
+			+md
+				padding: 50px 0 30px	0
+		&__form
+			width: 70%
+			+md
+				width: 100%
+			+sm
+				width: 50%
+				margin: 0 auto
+				text-align: center
+				display: flex
+				flex-direction: column
+			+xs
+				width: 100%
+				max-width: 320px
+			h4
+				font-size: 24px
+				font-weight: bold
+				margin-bottom: 5px
+			p
+				font-size: 14px
+			form
+				padding-top: 15px
+				+sm
+					display: flex
+					flex-direction: column
+				input
+					margin-right: 14px
+					max-width: 270px
+					+lg
+						max-width: 200px
+					+sm
+						max-width: 320px
+				p
+					font-size: 12px
+					a
+						text-decoration: none
+						border-bottom: 1px dashed #fff
+						color: #fff
+						cursor: pointer
+				button
+					padding: 15px 35px
+					max-width: 220px
+					+sm
+						width: 100%
+						max-width: 320px
+						margin-bottom: 15px
+.title
+	position: relative
+	z-index: 1
+	width: 55%
+	+lg
+		width: 50%
+	+sm
+		width: 100%
+		text-align: center
+	h1, h2
+		font-size: 60px
+		+lg
+			font-size: 50px
+		+xs
+			font-size: 30px
+		span
+			font-weight: 200
+	p 
+		margin-top: 10px
+		font-size: 18px
+		font-weight: 200
+.advantages
+	width: 45%
+	padding-top: 17px
+	position: relative
+	display: flex
+	flex-direction: column
+	z-index: 1
+	+sm
+		width: 100%
+		justify-content: center
+	&__icons
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		justify-content: space-between
+		+sm
+			width: 100%
+			padding-top: 50px
+			min-height: 400px
+			justify-content: center
+	&__item
+		min-height: 50px
+		width: 50%
+		position: relative
+		padding-left: 70px
+		margin-bottom: 45px
+		+md
+			width: 40%
+			padding: 50px 0 0 0
+			text-align: center
+		+xs
+			width: 100%
+			padding: 60px 0 0 0
+			margin-bottom: 25px
+		span
+			display: inline-block
+			position: absolute
+			width: 50px
+			height: 50px
+			top: 2px
+			left: 0
+			background-repeat: no-repeat
+			background-size: 100%
+			background-origin: center
+			+md
+				left: 50%
+				transform: translateX(-50%)
+			+xs
+				width: 60px
+				height: 60px
+		p
+			padding-top: 5px
+			font-weight: 200
+			strong
+				text-transform: uppercase
+				font-weight: 600
+#clockdiv
+	display:flex
+	padding-top: 20px
+	+sm
+		text-align: center
+	p
+		text-transform: uppercase
+		font-size: 22px
+		margin-bottom: 20px
+	span
+		display: inline-block
+		color: #fff
+		width: 60px
+		height: 60px
+		font-weight: 700
+		line-height: 60px
+		text-align: center
+		margin-right: 2%
+		font-size: 28px
+		background-color: #0c3577
+	
