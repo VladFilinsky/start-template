@@ -8,7 +8,58 @@
 {% include "partials/_header.html" %}
 {% include "partials/pages/share/_hero.html" %}
 {% include "partials/pages/share/_share.html" %}
-{% include "partials/_bottom.html" %}
+<section class="s-hero share--bottom overlay" style="background-image:url(img/share/topBg.jpg);">
+	<div class="container">
+		<div class="hero">
+			<div class="title wow fadeInLeft" data-wow-delay="1.8s">
+				<h1>Последние <br>квартиры<br><span>в доме № 6</span></h1>
+				<div class="hr"></div>
+				<p>Успевайте купить жилье <br>премиум класса в городе Сургут</p>
+			</div>
+			<div class="advantages">
+				<div class="advantages__icons">
+					<div class="advantages__item wow fadeInUp" data-wow-delay="1.8s">
+						<span style="background-image:url(img/share/icon-1.svg);"></span>
+						<p>Улучшенная<br><strong>планировка</strong></p>
+					</div>
+					<div class="advantages__item wow fadeInUp" data-wow-delay="2s">
+						<span style="background-image:url(img/share/icon-2.svg);"></span>
+						<p>Двор<br><strong>без машин</strong></p>
+					</div>
+					<div class="advantages__item wow fadeInUp" data-wow-delay="2s">
+						<span style="background-image:url(img/share/icon-3.svg);"></span>
+						<p>Река и парк<br><strong>за вашим окном</strong></p>
+					</div>
+					<div class="advantages__item wow fadeInUp" data-wow-delay="2.2s">
+						<span style="background-image:url(img/share/icon-4.svg);"></span>
+						<p>Новая<br><strong>Инфраструктура</strong></p>
+					</div>
+				</div>
+
+					<div id="clockdown-2" class="clockdown wow fadeInUp" data-wow-delay="1.8s">
+						<p>до сдачи дома</p>
+						<span class="days"></span>
+						<span class="hours"></span>
+						<span class="minutes"></span>
+						<span class="seconds"></span>
+					</div>
+
+			</div>
+		</div>
+		<div class="hero__bottom wow fadeInUp">
+				<div class="hero__form">
+				<h4>Оставьте заявку уже сейчас</h4>
+				<form name="questions">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input id="questions-phone--bottom" type="tel" name="phone" placeholder="Ваш телефон *" required>
+					<input type="hidden" name="form__question">
+					<button class="btn btn__green">заказать звонок</button>	
+					<p>Отправляя форму вы даете согласие на <a href="upload/policy.pdf" target="_blank">обработку персональных данных</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 {% include "partials/_footer.html" %}
 {% include "partials/includes/_modal.html" %}
 {% endblock %}
